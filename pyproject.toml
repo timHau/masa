@@ -4,14 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "masa"
-version = "0.1.0"  # Replace with your actual version
+version = "0.1.0"                                                         # Replace with your actual version
 description = "MASA: Matching Anything By Segmenting Anything"
 readme = "README.md"
 keywords = ["instance matching", "object tracking"]
-authors = [
-    { name = "Siyuan Li", email = "siyuan.li@vision.ee.ethz.ch" },
-]
-license = {text = "Apache-2.0"}
+authors = [{ name = "Siyuan Li", email = "siyuan.li@vision.ee.ethz.ch" }]
+license = { text = "Apache-2.0" }
 
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -21,7 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
-requires-python = ">= 3.11"
+requires-python = ">= 3.8"
 
 dependencies = [
     "wheel",
@@ -38,13 +36,13 @@ dependencies = [
     "nltk",
     "h5py",
     "einops",
-    "seaboard",
+    "seaborn",
     "fairscale",
     # Additional dependencies installed via Git are listed in the installation script
 ]
 
 [tool.setuptools]
-package-dir = {"masa" = "masa"}
+package-dir = { "masa" = "masa" }
 include-package-data = false
 license-files = ["LICENSE"]
 zip-safe = true
